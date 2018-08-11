@@ -1,0 +1,35 @@
+<div class="flex">
+    <h1 id="title">
+        Processing payment <span id="dots"></span>
+    </h1>
+    <div id="id"></div>
+</div>
+<style>
+    .flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .success {
+        color: greenyellow;
+    }
+</style>
+<script>
+    let repeated = 0;
+    function animate() {
+        repeated++;
+        if (repeated < 20) {
+            setTimeout(animate, 200);
+            const text = document.getElementById("dots").innerText;
+            if (text == "...") {
+                document.getElementById("dots").innerText = "";
+            } else {
+                document.getElementById("dots").innerText = text + ".";
+            }
+        } else {
+            document.getElementById("title").innerHTML = "Payment <span class='success'>SUCCESSFUL</span>";
+            document.getElementById("id").innerText = "Payment ID: " + Math.floor(Math.random() * 1000000 + 100000);
+        }
+    }
+    animate();
+</script>

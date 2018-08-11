@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Paymet successful page",
+    "description": "After a hotkey is pressed, any link/button on page will open a fake \"payment successful\" page",
+    "content_scripts": [{
+        "js": ["index.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "web_accessible_resources": [
+        "success_body_only.html",
+        "success_head_only.html"
+    ],
+    "icons": {
+        "128": "icon.png"
+    },
+    "version": "1"
+}
