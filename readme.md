@@ -1,5 +1,5 @@
-# Fake "Payment Successful" page
-Ever had fun with scam technical support, and wanted to continue past the "making payment" to see what will happen had you really paid for their services? This extension will allow you to (hopefully) trick them, and they will see a fake "payment success" page.
+# Fake "Payment Successful" page (Chrome extension)
+Ever had fun with scam technical support, and wanted to continue past the "making payment" to see what will happen had you really paid for their services? This extension will allow you to (hopefully) trick them, and they will see a fake "payment success" page. You may find the full chrome extension [here](https://chrome.google.com/webstore/detail/paymet-successful-page/gmocifagomhgblnjgocdgbngkamdcfop)
 
 # Usage
 In order to use the extension, you have to press CTRL + M combination. After that, if you click on any link, press any button or submit any form, browser will show a fake "payment success" page.
